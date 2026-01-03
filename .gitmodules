@@ -1,0 +1,6 @@
+[submodule "patches"]
+	path = patches
+	url = https://github.com/x1e-laptops/linux-qcom-laptops
+[submodule "linux"]
+	path = linux
+	url = https://gitlab.com/Linaro/arm64-laptops/linux
