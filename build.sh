@@ -14,6 +14,11 @@ for patch in ../patches/*.patch; do
   git apply -v "$patch"
 done
 cp ../config/* arch/arm64/configs/
-    
-scripts/kconfig/merge_config.sh arch/arm64/configs/{debian-working.config,defconfig,qcom_laptops.config,misc.config,waydroid.config}
+
+#apply multiple config files at once
+scripts/kconfig/merge_config.sh arch/arm64/configs/{debian-working.config,defconfig,qcom_laptops.config,misc.config,waydroid.config,version.config}
+
+#remove the trailing + in the version number
+sed -i 's/${scm_version}//' scripts/setlocalversion
+
 make -j12 bindeb-pkg
