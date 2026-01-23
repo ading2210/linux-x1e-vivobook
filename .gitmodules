@@ -1,6 +1,9 @@
-[submodule "patches"]
-	path = patches
-	url = https://github.com/x1e-laptops/linux-qcom-laptops
 [submodule "linux"]
 	path = linux
 	url = https://gitlab.com/Linaro/arm64-laptops/linux
+[submodule "patches"]
+	path = patches
+	url = https://github.com/binarycraft007/linux-x1e80100-vivobook-s15
+[submodule "firmware"]
+	path = firmware
+	url = https://github.com/binarycraft007/firmware-asus-s5507q
