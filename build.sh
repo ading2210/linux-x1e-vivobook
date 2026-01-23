@@ -22,3 +22,7 @@ scripts/kconfig/merge_config.sh arch/arm64/configs/{debian-working.config,defcon
 sed -i 's/${scm_version}//' scripts/setlocalversion
 
 make -j12 bindeb-pkg
+
+cd ..
+mkdir -p out
+mv ./*.deb ./*changes ./*buildinfo out/
