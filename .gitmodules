@@ -1,6 +1,6 @@
 [submodule "linux"]
 	path = linux
-	url = https://gitlab.com/Linaro/arm64-laptops/linux
+	url = https://gitlab.com/Linaro/arm64-laptops/linux.git
 [submodule "patches"]
 	path = patches
 	url = https://github.com/binarycraft007/linux-x1e80100-vivobook-s15
